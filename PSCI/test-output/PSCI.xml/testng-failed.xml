@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PSCI.xml]">
+  <test name="Vitreos(failed)">
+    <classes>
+      <class name="com.psci.testscripts.TestPSCI">
+        <methods>
+          <include name="dimensionsTest"/>
+        </methods>
+      </class> <!-- com.psci.testscripts.TestPSCI -->
+    </classes>
+  </test> <!-- Vitreos(failed) -->
+</suite> <!-- Failed suite [PSCI.xml] -->

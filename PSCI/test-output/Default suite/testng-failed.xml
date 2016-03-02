@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.psci.testscripts.TestPSCI">
+        <methods>
+          <include name="verifyLogout"/>
+          <include name="oneYearDOSReportTest"/>
+          <include name="RateMeasureValueTest"/>
+          <include name="saveViewLinkTest"/>
+          <include name="analyticsClickTest"/>
+          <include name="excludeMultiSelectTest"/>
+          <include name="verifyLogin"/>
+          <include name="exportPatientCareRecommendationReportTest"/>
+          <include name="costPMPMTest"/>
+          <include name="multiSelectTest"/>
+          <include name="exportPatientDisparitiesReportTest"/>
+          <include name="searchTest"/>
+          <include name="openChartsTest"/>
+          <include name="dimensionsTest"/>
+          <include name="dimensionSummaryTest"/>
+        </methods>
+      </class> <!-- com.psci.testscripts.TestPSCI -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

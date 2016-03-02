@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PSCI]">
+  <test name="Vitreos Test Result(failed)">
+    <classes>
+      <class name="com.psci.testscripts.TestPSCI">
+        <methods>
+          <include name="exportPatientCareRecommendationReportTest"/>
+          <include name="beforeTest"/>
+          <include name="captureScreenShot"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.psci.testscripts.TestPSCI -->
+    </classes>
+  </test> <!-- Vitreos Test Result(failed) -->
+</suite> <!-- Failed suite [PSCI] -->

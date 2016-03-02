@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Vitreos">
+
+  <test name="Vitreos Test Result Firefox" >
+    <classes>
+       <parameter name="Browser" value="firefox"/>
+       <class name="com.psci.testscripts.TestPSCI"/>
+        <methods>
+       		<include name="verifyLogin" />
+       		<exclude name="dimensionsTest" />
+       		<exclude name="dimensionSummaryTest" />
+       		<exclude name="dimensionSummaryTotalCostTest" />
+       		<exclude name="oneYearDOSReportTest" />
+       		<exclude name="exportPatientDisparitiesReportTest" />
+       		<exclude name="exportPatientCareRecommendationReportTest" />
+       		<exclude name="excludeMultiSelectTest" />
+       		<exclude name="searchTest" />
+       		<exclude name="multiSelectTest" />
+       		<exclude name="analyticsClickTest" />
+       		<exclude name="saveViewLinkTest" />
+       		<exclude name="openChartsTest" />
+       		<exclude name="costPMPMTest" />
+       		<exclude name="RateMeasureValueTest" />
+       		<exclude name="verifyLogout" />
+       		<include name="captureScreenShot" />
+       </methods>  
+    </classes>
+  </test>
+  
+  
+  
+  <!--  <test name="Vitreos Test Result Chrome" >
+    <classes>
+       <parameter name="Browser" value="chrome"/>
+       <class name="com.psci.testscripts.TestPSCI"/>
+        <methods>
+       		<include name="verifyLogin" />
+       		<exclude name="dimensionsTest" />
+       		<exclude name="dimensionSummaryTest" />
+       		<exclude name="oneYearDOSReportTest" />
+       		<exclude name="exportPatientDisparitiesReportTest" />
+       		<exclude name="exportPatientCareRecommendationReportTest" />
+       		<exclude name="excludeMultiSelectTest" />
+       		<exclude name="searchTest" />
+       		<exclude name="multiSelectTest" />
+       		<exclude name="analyticsClickTest" />
+       		<exclude name="saveViewLinkTest" />
+       		<exclude name="openChartsTest" />
+       		<exclude name="costPMPMTest" />
+       		<exclude name="RateMeasureValueTest" />
+       		<include name="verifyLogout" />
+       		<include name="captureScreenShot" />
+       </methods>  
+    </classes>
+  </test> -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ </suite>
+ 
+ 
+ 

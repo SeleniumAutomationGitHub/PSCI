@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Vitreos]">
+  <parameter name="Browser" value="firefox"/>
+  <test name="Vitreos Test Result Firefox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.psci.testscripts.TestPSCI">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="captureScreenShot"/>
+          <include name="verifyLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.psci.testscripts.TestPSCI -->
+    </classes>
+  </test> <!-- Vitreos Test Result Firefox(failed) -->
+</suite> <!-- Failed suite [Vitreos] -->

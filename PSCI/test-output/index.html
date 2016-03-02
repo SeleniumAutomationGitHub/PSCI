@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Vitreos">
+              <span class="suite-name border-failed">Vitreos</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Vitreos">
+                    <span>D:\Projects\Automation\Workspace\PSCI\PSCIExecute.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Vitreos">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Vitreos">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Vitreos">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Vitreos">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Vitreos">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Vitreos">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Vitreos" class="hide-methods failed suite-Vitreos"> (hide)</a> <!-- hide-methods failed suite-Vitreos -->
+                      <a href="#" panel-name="suite-Vitreos" class="show-methods failed suite-Vitreos"> (show)</a> <!-- show-methods failed suite-Vitreos -->
+                    </span>
+                    <div class="method-list-content failed suite-Vitreos">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Vitreos" title="com.psci.testscripts.TestPSCI" hash-for-method="verifyLogin(sumanta, Automation@143)">verifyLogin(sumanta, Automation@143)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Vitreos -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Vitreos" class="panel Vitreos">
+          <div class="suite-Vitreos-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.psci.testscripts.TestPSCI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(sumanta, Automation@143)">
+                  </a> <!-- verifyLogin(sumanta, Automation@143) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(sumanta, Automation@143)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login Title validation failed expected [Vitreos Healthcare Data Analyzer] but found [Problem loading page]
+	at com.psci.pageobject.VitreosLoginPage.verifyLoginPage(VitreosLoginPage.java:42)
+	at com.psci.testscripts.TestPSCI.verifyLogin(TestPSCI.java:66)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Vitreos-class-failed -->
+        </div> <!-- panel Vitreos -->
+        <div panel-name="test-xml-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Projects\Automation\Workspace\PSCI\PSCIExecute.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Vitreos&quot;&gt;
+  &lt;test name=&quot;Vitreos Test Result Firefox&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.psci.testscripts.TestPSCI&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyLogin&quot;/&gt;
+          &lt;include name=&quot;captureScreenShot&quot;/&gt;
+          &lt;exclude name=&quot;dimensionsTest&quot;/&gt;
+          &lt;exclude name=&quot;dimensionSummaryTest&quot;/&gt;
+          &lt;exclude name=&quot;dimensionSummaryTotalCostTest&quot;/&gt;
+          &lt;exclude name=&quot;oneYearDOSReportTest&quot;/&gt;
+          &lt;exclude name=&quot;exportPatientDisparitiesReportTest&quot;/&gt;
+          &lt;exclude name=&quot;exportPatientCareRecommendationReportTest&quot;/&gt;
+          &lt;exclude name=&quot;excludeMultiSelectTest&quot;/&gt;
+          &lt;exclude name=&quot;searchTest&quot;/&gt;
+          &lt;exclude name=&quot;multiSelectTest&quot;/&gt;
+          &lt;exclude name=&quot;analyticsClickTest&quot;/&gt;
+          &lt;exclude name=&quot;saveViewLinkTest&quot;/&gt;
+          &lt;exclude name=&quot;openChartsTest&quot;/&gt;
+          &lt;exclude name=&quot;costPMPMTest&quot;/&gt;
+          &lt;exclude name=&quot;RateMeasureValueTest&quot;/&gt;
+          &lt;exclude name=&quot;verifyLogout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.psci.testscripts.TestPSCI --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Vitreos Test Result Firefox --&gt;
+&lt;/suite&gt; &lt;!-- Vitreos --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Vitreos</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Vitreos Test Result Firefox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Vitreos</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Vitreos</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Vitreos');
+function tableData_Vitreos() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLogin')
+data.setCell(0, 2, 'com.psci.testscripts.TestPSCI')
+data.setCell(0, 3, 62);
+window.suiteTableData['Vitreos']= { tableData: data, tableDiv: 'times-div-Vitreos'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 62 ms</span>
+              <div id="times-div-Vitreos">
+              </div> <!-- times-div-Vitreos -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Vitreos</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.psci.testscripts.TestPSCI</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLogout</span>
+                <br/>
+                <span class="ignored-method-name">dimensionSummaryTotalCostTest</span>
+                <br/>
+                <span class="ignored-method-name">oneYearDOSReportTest</span>
+                <br/>
+                <span class="ignored-method-name">RateMeasureValueTest</span>
+                <br/>
+                <span class="ignored-method-name">saveViewLinkTest</span>
+                <br/>
+                <span class="ignored-method-name">excludeMultiSelectTest</span>
+                <br/>
+                <span class="ignored-method-name">analyticsClickTest</span>
+                <br/>
+                <span class="ignored-method-name">exportPatientCareRecommendationReportTest</span>
+                <br/>
+                <span class="ignored-method-name">costPMPMTest</span>
+                <br/>
+                <span class="ignored-method-name">multiSelectTest</span>
+                <br/>
+                <span class="ignored-method-name">searchTest</span>
+                <br/>
+                <span class="ignored-method-name">exportPatientDisparitiesReportTest</span>
+                <br/>
+                <span class="ignored-method-name">openChartsTest</span>
+                <br/>
+                <span class="ignored-method-name">dimensionsTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Vitreos" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.psci.testscripts.TestPSCI</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLogin(sumanta, Automation@143)</span>
+                <span class="method-start">30988 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenShot([TestResult name=verifyLogin status=FAILURE method=TestPSCI.verifyLogin(java.lang.String, java.lang....)</span>
+                <span class="method-start">31050 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
