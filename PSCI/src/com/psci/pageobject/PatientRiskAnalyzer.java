@@ -29,7 +29,6 @@ import com.thoughtworks.selenium.webdriven.commands.IsAlertPresent;
 
 public class PatientRiskAnalyzer {
 	
-	int x = 15;
 	
 	//PatientRiskAnalyzerTab Locator
 	@FindBy(how = How.XPATH, using = ".//*[@id='costDiv']")
