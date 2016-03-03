@@ -1,2 +1,4 @@
-set classpath=D:\Projects\Automation\Workspace\Library\*;D:\Projects\Automation\Workspace\PSCI\bin;
-java org.testng.TestNG PSCIExecute.xml
+set projectLocation=C:\Users\skbehera\git\PSCI\PSCI
+cd %projectLocation%
+set classpath=%projectLocation%\bin;%projectLocation%\lib\*
+java org.testng.TestNG %projectLocation%\PSCIExecute.xml
