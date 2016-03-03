@@ -33,7 +33,10 @@ public void beforeTest(String browser)
 {
 		  InitilizerDriverBrowser.driver = InitilizerDriverBrowser.launchBrowser(browser);
 		  InitilizerDriverBrowser.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		  InitilizeURL.launchURL("http://202.89.104.116:8080/ClaimsAnalyzer/"); // Test URL
+		  
+		  InitilizeURL.launchURL("https://www.google.co.in/");
+		  
+		  //InitilizeURL.launchURL("http://202.89.104.116:8080/ClaimsAnalyzer/"); // Test URL
 		  //InitilizeURL.launchURL("https://192.99.45.121/Macombs/logoutAction.do");	//Demo URL
 		  vlp = PageFactory.initElements(InitilizerDriverBrowser.driver, VitreosLoginPage.class);
 		  pra = PageFactory.initElements(InitilizerDriverBrowser.driver, PatientRiskAnalyzer.class);
