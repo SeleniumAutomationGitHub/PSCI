@@ -39,8 +39,7 @@ public class VitreosLoginPage {
 		try{
 			if(InitilizerDriverBrowser.driver.getTitle() !=null)
 			{
-				//Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Login Title validation failed");
-				System.out.println(InitilizerDriverBrowser.driver.getTitle() + " " + "Browser Opened.");
+				Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Login Title validation failed");
 			}
 		}catch(Exception e){
 			System.out.println("URL is not correct");
@@ -49,6 +48,18 @@ public class VitreosLoginPage {
 				
 	}
 		
+	public void verifyGmailLoginPage(){
+		
+		try{
+			
+			System.out.println(InitilizerDriverBrowser.driver.getTitle());
+			
+		}catch(Exception e){
+			System.out.println("URL is not correct");
+			//e.printStackTrace();
+		}
+				
+	}
 		
 	//Login to application
 	public void loginToVitreos(String username, String passwd)

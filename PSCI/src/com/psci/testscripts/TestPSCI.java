@@ -49,7 +49,6 @@ public void beforeTest(String browser)
 		
 		Object[][] getData = new DriverScript().getTestData(".\\input\\TestData.xls", "login");
 		return getData;
-		
 	}
 
 
@@ -66,7 +65,10 @@ public void beforeTest(String browser)
 	}
 	
 	
-	
+	@Test(priority=1, enabled=true)
+	public void verifyGlogin(){
+		vlp.verifyGmailLoginPage();
+	}
 	
 	//Test Cases: 01
 	@Test(priority = 2, description = "Verify that without any filter, all dimensions open without any error.", enabled=true)

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Verified the Login Page Title Successfully...!]]>
-    </line>
   </reporter-output>
-  <suite name="Vitreos" duration-ms="7198" started-at="2016-03-04T08:25:48Z" finished-at="2016-03-04T08:25:55Z">
+  <suite name="Vitreos" duration-ms="7022" started-at="2016-03-04T08:31:21Z" finished-at="2016-03-04T08:31:28Z">
     <groups>
     </groups>
-    <test name="Vitreos Test Result Firefox" duration-ms="7198" started-at="2016-03-04T08:25:48Z" finished-at="2016-03-04T08:25:55Z">
+    <test name="Vitreos Test Result Firefox" duration-ms="7022" started-at="2016-03-04T08:31:21Z" finished-at="2016-03-04T08:31:28Z">
       <class name="com.psci.testscripts.TestPSCI">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="beforeTest" is-config="true" duration-ms="6800" started-at="2016-03-04T13:55:48Z" finished-at="2016-03-04T13:55:55Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="beforeTest" is-config="true" duration-ms="6725" started-at="2016-03-04T14:01:21Z" finished-at="2016-03-04T14:01:27Z">
           <params>
             <param index="0">
               <value>
@@ -21,37 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="verifyLogin" duration-ms="57" started-at="2016-03-04T13:55:55Z" data-provider="Authentication" finished-at="2016-03-04T13:55:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sumanta]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Automation@143]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="verifyGlogin()[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="verifyGlogin" duration-ms="43" started-at="2016-03-04T14:01:27Z" finished-at="2016-03-04T14:01:27Z">
           <reporter-output>
-            <line>
-              <![CDATA[Verified the Login Page Title Successfully...!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="captureScreenShot" is-config="true" duration-ms="1" started-at="2016-03-04T13:55:55Z" finished-at="2016-03-04T13:55:55Z">
+        </test-method> <!-- verifyGlogin -->
+        <test-method status="PASS" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="captureScreenShot" is-config="true" duration-ms="0" started-at="2016-03-04T14:01:27Z" finished-at="2016-03-04T14:01:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=TestPSCI.verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd] output=Verified the Login Page Title Successfully...!]]]>
+                <![CDATA[[TestResult name=verifyGlogin status=SUCCESS method=TestPSCI.verifyGlogin()[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenShot -->
-        <test-method status="PASS" signature="browserQuitTest()[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="browserQuitTest" is-config="true" duration-ms="220" started-at="2016-03-04T13:55:55Z" finished-at="2016-03-04T13:55:55Z">
+        <test-method status="PASS" signature="browserQuitTest()[pri:0, instance:com.psci.testscripts.TestPSCI@61a52fbd]" name="browserQuitTest" is-config="true" duration-ms="245" started-at="2016-03-04T14:01:27Z" finished-at="2016-03-04T14:01:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitTest -->
