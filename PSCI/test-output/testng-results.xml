@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Vitreos" duration-ms="6624" started-at="2016-03-03T12:28:45Z" finished-at="2016-03-03T12:28:52Z">
+  <suite name="Vitreos" duration-ms="6326" started-at="2016-03-04T07:54:07Z" finished-at="2016-03-04T07:54:13Z">
     <groups>
     </groups>
-    <test name="Vitreos Test Result Firefox" duration-ms="6624" started-at="2016-03-03T12:28:45Z" finished-at="2016-03-03T12:28:52Z">
+    <test name="Vitreos Test Result Firefox" duration-ms="6326" started-at="2016-03-04T07:54:07Z" finished-at="2016-03-04T07:54:13Z">
       <class name="com.psci.testscripts.TestPSCI">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@2d6d8735]" name="beforeTest" is-config="true" duration-ms="6615" started-at="2016-03-03T17:58:45Z" finished-at="2016-03-03T17:58:52Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.psci.testscripts.TestPSCI@2d6d8735]" name="beforeTest" is-config="true" duration-ms="6319" started-at="2016-03-04T13:24:07Z" finished-at="2016-03-04T13:24:13Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="verifyLogin(java.lang.String, java.lang.String)[pri:1, instance:com.psci.testscripts.TestPSCI@2d6d8735]" name="verifyLogin" duration-ms="0" started-at="2016-03-03T17:58:52Z" data-provider="Authentication" finished-at="2016-03-03T17:58:52Z">
+        <test-method status="SKIP" signature="verifyLogin(java.lang.String, java.lang.String)[pri:1, instance:com.psci.testscripts.TestPSCI@2d6d8735]" name="verifyLogin" duration-ms="0" started-at="2016-03-04T13:24:13Z" data-provider="Authentication" finished-at="2016-03-04T13:24:13Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoClassDefFoundError: jxl/Workbook]]>
