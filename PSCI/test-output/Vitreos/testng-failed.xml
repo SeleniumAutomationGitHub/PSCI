@@ -8,6 +8,7 @@
       <class name="com.psci.testscripts.TestPSCI">
         <methods>
           <include name="beforeTest"/>
+          <include name="browserQuitTest"/>
           <include name="captureScreenShot"/>
           <include name="verifyLogin" invocation-numbers="0"/>
         </methods>

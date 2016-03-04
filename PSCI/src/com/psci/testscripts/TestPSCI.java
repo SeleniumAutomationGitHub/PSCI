@@ -43,14 +43,6 @@ public void beforeTest(String browser)
 }
 	
 	
-	/*@DataProvider (name = "Authentication")
-	public Object[][] credentials(){
-		
-		return new Object[][]{
-				new Object[] {"sumanta","Automation@143"}};
-		}*/
-			 
-	
 	
 	@DataProvider (name = "Authentication")
 	public Object[][] credentials() throws Exception{
@@ -69,8 +61,8 @@ public void beforeTest(String browser)
 				vlp.verifyLoginPage();
 			  	Reporter.log("Verified the Login Page Title Successfully...!");
 			  
-			  	vlp.loginToVitreos(username, passwd);
-			  	Reporter.log("Login into Vitreos by : " + vlp.userNameText.getText() + " successfully and navigating to Patient Risk Analyzer page");
+			  	//vlp.loginToVitreos(username, passwd);
+			  	//Reporter.log("Login into Vitreos by : " + vlp.userNameText.getText() + " successfully and navigating to Patient Risk Analyzer page");
 	}
 	
 	
@@ -104,17 +96,17 @@ public void beforeTest(String browser)
 		pra.dimensionClick(pra.payerDimension, pra.signPlusMinusPayer);
 		Reporter.log(pra.payerDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.providerDimension, pra.signPlusMinusProvider);
-		//Reporter.log(pra.providerDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.providerDimension, pra.signPlusMinusProvider);
+		Reporter.log(pra.providerDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.admissionTypeDimension, pra.signPlusMinusAdmissionType);
-		//Reporter.log(pra.admissionTypeDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.admissionTypeDimension, pra.signPlusMinusAdmissionType);
+		Reporter.log(pra.admissionTypeDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.claimsSpeDimension, pra.signPlusMinusClaimsSpeciality);
-		//Reporter.log(pra.claimsSpeDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.claimsSpeDimension, pra.signPlusMinusClaimsSpeciality);
+		Reporter.log(pra.claimsSpeDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.claimsTypeDimension, pra.signPlusMinusClaimsType);
-		//Reporter.log(pra.claimsTypeDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.claimsTypeDimension, pra.signPlusMinusClaimsType);
+		Reporter.log(pra.claimsTypeDimension.getText() + " dimension is clicked and expanded successfully.");
 		
 		pra.dimensionClick(pra.placeOfServiceDimension, pra.signPlusMinusPlaceOfService);
 		Reporter.log(pra.placeOfServiceDimension.getText() + " dimension is clicked and expanded successfully.");
@@ -125,17 +117,17 @@ public void beforeTest(String browser)
 		pra.dimensionClick(pra.procedureDimension, pra.signPlusMinusProcedure);
 		Reporter.log(pra.procedureDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.clinicDimension, pra.signPlusMinusClinic);
-		//Reporter.log(pra.clinicDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.clinicDimension, pra.signPlusMinusClinic);
+		Reporter.log(pra.clinicDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.zipcodeDimension, pra.signPlusMinusZipcode);
-		//Reporter.log(pra.zipcodeDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.zipcodeDimension, pra.signPlusMinusZipcode);
+		Reporter.log(pra.zipcodeDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.pcpAffiliationDimension, pra.signPlusMinusAffiliation);
-		//Reporter.log(pra.pcpAffiliationDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.pcpAffiliationDimension, pra.signPlusMinusAffiliation);
+		Reporter.log(pra.pcpAffiliationDimension.getText() + " dimension is clicked and expanded successfully.");
 		
-		//pra.dimensionClick(pra.medicationsDimension, pra.signPlusMinusMedications);
-		//Reporter.log(pra.medicationsDimension.getText() + " dimension is clicked and expanded successfully.");
+		pra.dimensionClick(pra.medicationsDimension, pra.signPlusMinusMedications);
+		Reporter.log(pra.medicationsDimension.getText() + " dimension is clicked and expanded successfully.");
 		
 	}
 	
@@ -357,7 +349,7 @@ public void beforeTest(String browser)
 	}
 	
 	
-	@AfterTest(enabled=false)
+	@AfterTest(enabled=true)
 	public void browserQuitTest() 
 	{
 		vlp.browserQuit();

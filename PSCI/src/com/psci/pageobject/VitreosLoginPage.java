@@ -39,7 +39,7 @@ public class VitreosLoginPage {
 		try{
 			if(InitilizerDriverBrowser.driver.getTitle() !=null)
 			{
-				Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Login Title validation failed");
+				//Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Login Title validation failed");
 			}
 		}catch(Exception e){
 			System.out.println("URL is not correct");
@@ -113,7 +113,6 @@ public class VitreosLoginPage {
 			System.out.println("Browser closed");
 		}catch(Exception e){
 			e.printStackTrace();
-			//System.out.println("Not able to close browser");
 		}
 	}
 	
