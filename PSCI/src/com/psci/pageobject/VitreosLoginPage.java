@@ -43,23 +43,11 @@ public class VitreosLoginPage {
 			}
 		}catch(Exception e){
 			System.out.println("URL is not correct");
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 				
 	}
 		
-	public void verifyGmailLoginPage(){
-		
-		try{
-			
-			System.out.println(InitilizerDriverBrowser.driver.getTitle());
-			
-		}catch(Exception e){
-			System.out.println("URL is not correct");
-			//e.printStackTrace();
-		}
-				
-	}
 		
 	//Login to application
 	public void loginToVitreos(String username, String passwd)

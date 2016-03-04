@@ -34,9 +34,7 @@ public void beforeTest(String browser)
 		  InitilizerDriverBrowser.driver = InitilizerDriverBrowser.launchBrowser(browser);
 		  InitilizerDriverBrowser.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  
-		  InitilizeURL.launchURL("https://www.google.co.in/");
-		  
-		  //InitilizeURL.launchURL("http://202.89.104.116:8080/ClaimsAnalyzer/"); // Test URL
+		  InitilizeURL.launchURL("http://202.89.104.116:8080/ClaimsAnalyzer/"); // Test URL
 		  //InitilizeURL.launchURL("https://192.99.45.121/Macombs/logoutAction.do");	//Demo URL
 		  vlp = PageFactory.initElements(InitilizerDriverBrowser.driver, VitreosLoginPage.class);
 		  pra = PageFactory.initElements(InitilizerDriverBrowser.driver, PatientRiskAnalyzer.class);
@@ -60,15 +58,11 @@ public void beforeTest(String browser)
 				vlp.verifyLoginPage();
 			  	Reporter.log("Verified the Login Page Title Successfully...!");
 			  
-			  	//vlp.loginToVitreos(username, passwd);
-			  	//Reporter.log("Login into Vitreos by : " + vlp.userNameText.getText() + " successfully and navigating to Patient Risk Analyzer page");
+			  	vlp.loginToVitreos(username, passwd);
+			  	Reporter.log("Login into Vitreos by : " + vlp.userNameText.getText() + " successfully and navigating to Patient Risk Analyzer page");
 	}
 	
 	
-	@Test(priority=1, enabled=true)
-	public void verifyGlogin(){
-		vlp.verifyGmailLoginPage();
-	}
 	
 	//Test Cases: 01
 	@Test(priority = 2, description = "Verify that without any filter, all dimensions open without any error.", enabled=true)
@@ -351,7 +345,7 @@ public void beforeTest(String browser)
 	}
 	
 	
-	@AfterTest(enabled=true)
+	@AfterTest(enabled=false)
 	public void browserQuitTest() 
 	{
 		vlp.browserQuit();

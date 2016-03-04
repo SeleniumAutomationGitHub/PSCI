@@ -7,8 +7,7 @@
        <parameter name="Browser" value="firefox"/>
        <class name="com.psci.testscripts.TestPSCI"/>
         <methods>
-       		<include name="verifyGlogin" />
-       		<exclude name="verifyLogin" />
+       		<include name="verifyLogin" />
        		<exclude name="dimensionsTest" />
        		<exclude name="dimensionSummaryTest" />
        		<exclude name="dimensionSummaryTotalCostTest" />
