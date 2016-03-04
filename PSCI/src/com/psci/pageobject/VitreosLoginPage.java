@@ -78,7 +78,6 @@ public class VitreosLoginPage {
 			}
 		} catch (Exception e) {
 			Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Problem loading page", "URL is not able to access");
-			//System.out.println("Unable to click on element ");
 		}
 	}
 	
@@ -95,7 +94,6 @@ public class VitreosLoginPage {
 				Thread.sleep(5000);
 				logoutLink.click();
 				Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Logout failed");
-				//System.out.println("Logged out Viterous successfully.");
 			} else{
 				Assert.assertEquals(pra.isElementPresent(logoutLink), true, "FAILED because Logout link is not found.");
 			}
