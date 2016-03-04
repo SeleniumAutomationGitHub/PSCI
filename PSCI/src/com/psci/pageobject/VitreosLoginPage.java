@@ -40,6 +40,7 @@ public class VitreosLoginPage {
 			if(InitilizerDriverBrowser.driver.getTitle() !=null)
 			{
 				//Assert.assertEquals(InitilizerDriverBrowser.driver.getTitle(), "Vitreos Healthcare Data Analyzer", "Login Title validation failed");
+				System.out.println(InitilizerDriverBrowser.driver.getTitle() + " " + "Browser Opened.");
 			}
 		}catch(Exception e){
 			System.out.println("URL is not correct");
@@ -49,7 +50,6 @@ public class VitreosLoginPage {
 	}
 		
 		
-	
 	//Login to application
 	public void loginToVitreos(String username, String passwd)
 	{
