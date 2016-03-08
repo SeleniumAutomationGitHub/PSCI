@@ -19,8 +19,6 @@ public class InitilizerDriverBrowser {
 		return profile;
 	}
 
-	//@Parameters("Browser")
-	//@Test
 	public static WebDriver launchBrowser(String browser)
 	{
 		try
